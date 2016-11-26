@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:id="@+id/iv_gambar_detail"
+        android:src="@drawable/a1"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_alignEnd="@+id/tv_harga_detail"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nama Eskrim "
+        android:id="@+id/tv_nama_detail"
+        android:layout_below="@+id/iv_gambar_detail"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Harga EsKrim"
+        android:id="@+id/tv_harga_detail"
+        android:layout_below="@+id/tv_nama_detail"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:id="@+id/btn_order"
+        android:layout_below="@+id/btn_tambah"
+        android:layout_alignEnd="@+id/btn_back"
+        android:layout_alignStart="@+id/btn_tambah" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jumlah 1 Porsi"
+        android:id="@+id/tv_kuantitas"
+        android:layout_below="@+id/tv_harga_detail"
+        android:layout_alignEnd="@+id/btn_kurang" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btn_tambah"
+        android:layout_alignTop="@+id/btn_kurang"
+        android:layout_toStartOf="@+id/btn_kurang" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btn_kurang"
+        android:layout_below="@+id/tv_kuantitas"
+        android:layout_alignEnd="@+id/btn_back" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btn_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btn_exit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/btn_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
